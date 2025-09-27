@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Search Ingredients</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+
+  <link rel="stylesheet" href="search.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body style="background-image: url('assets/bg.jpg');" class="bg-[#fcfcf8] font-['Spline_Sans',_'Noto_Sans',_sans-serif]">
+  <!-- Header -->
+      <div id="header"></div>
+  <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden group/design-root">
+    <div class="layout-container flex h-full grow flex-col">
+      <main class="flex-1 flex flex-col items-center justify-center p-2 md:p-10" id="main">
+        <div class="w-full max-w-2xl mx-auto">
+          <h2 class="section-title mb-4">What ingredients do you have?</h2>
+
+          <!-- Input + Add button -->
+          <div class="bg-white rounded-2xl shadow-sm p-2 flex items-center gap-2 border border-[#e9e8ce] mb-2 relative">
+            <input
+              id="ingredientInput"
+              class="form-input flex-1 w-full bg-transparent border-none focus:ring-0 text-base text-[#1c1c0d] placeholder:text-[#9e9d47]"
+              placeholder="Add ingredients like tomato, cheese, pasta..." type="text" />
+            <button id="addBtn"
+              class="flex-shrink-0 flex items-center justify-center rounded-full h-10 px-6 bg-[var(--primary-color)] text-[#1c1c0d] text-sm font-bold tracking-wide hover:brightness-95 transition-all">
+              Add
+            </button>
+          </div>
+
+          <!-- Chips container -->
+          <div id="ingredientsList" class="flex flex-wrap gap-2 mb-6"></div>
+
+          <!-- Categories section -->
+          <section class="ingredients-section mb-6">
+            <div class="container">
+              <div class="categories-navigation flex items-center gap-2 mb-2">
+                <button class="nav-arrow nav-arrow-left" id="prevBtn" aria-label="Previous categories">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="categories-container overflow-hidden flex-1">
+                  <div class="categories-slider flex gap-2" id="categoriesSlider"></div>
+                </div>
+                <button class="nav-arrow nav-arrow-right" id="nextBtn" aria-label="Next categories">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="selected-category-title mb-2" id="selectedCategoryTitle"></div>
+              <div class="ingredients-container flex flex-wrap gap-2" id="ingredientsContainer"></div>
+            </div>
+          </section>
+
+          <!-- Action buttons -->
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <button id="clearBtn"
+                class="flex items-center justify-center rounded-full h-12 px-6 bg-[#f4f4e6] text-[#1c1c0d] text-sm font-bold tracking-wide hover:bg-[#e9e8ce] transition-colors">
+                Clear All
+              </button>
+              
+            </div>
+            <button id="searchBtn"
+              class="w-full md:w-auto flex items-center justify-center rounded-full h-12 px-8 bg-[var(--primary-color)] text-[#1c1c0d] text-base font-bold tracking-wide hover:brightness-95 transition-all">
+              <span class="material-symbols-outlined mr-2">search</span>
+              Search Recipes
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+      function loadHTML(elementId, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch(error => console.error("Error loading file:", error));
+      }
+      loadHTML("header", "header.html");
+      loadHTML("footer", "footer.html");
+    </script>
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

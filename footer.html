@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+                 /* Footer */
+                 :root {
+  --primary-color: #facc15;
+  --secondary-color: #f59e0b;
+  --accent-gradient: linear-gradient(135deg, #facc15, #f59e0b);
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-white: #ffffff;
+  --bg-light: #f9fafb;
+  --border-color: #e5e7eb;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+.footer {
+    background: var(--text-dark);
+    color: var(--background-white);
+    padding: 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social h4 {
+  color: var(--border-color);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* align icons right */
+  border-radius: 50%;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.social-link:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    border-radius: 50%;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.social-link svg {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    min-height: 40px;
+    min-width: 40px;
+    color: var(--text-dark);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+}
+
+              </style>
+</head>
+<body>
+               <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>MealCraft</h3>
+        <p>Transform your ingredients into culinary masterpieces</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <polyline points="2,17 12,12 22,17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 MealCraft. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

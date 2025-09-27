@@ -1,0 +1,84 @@
+{
+  "Vegetables": {
+    "icon": "assets/icons/vegetables.png",
+    "items": ["Tomato","Potato","Onion","Carrot","Spinach","Broccoli","Cabbage","Cucumber","Capsicum","Cauliflower","Pumpkin","Sweet Potato","Radish","Beetroot","Turnip","Brinjal","Peas","Corn","Okra","Zucchini","Leek","Celery","Garlic","Ginger","Chili","Spring Onion","Lettuce","Kale","Bell Pepper","Artichoke"]
+  },
+
+  "Fruits": {
+    "icon": "assets/icons/fruits.png",
+    "items": ["Apple","Banana","Mango","Grapes","Orange","Pineapple","Guava","Papaya","Strawberry","Blueberry","Watermelon","Lychee","Kiwi","Dragonfruit","Avocado","Pomegranate","Peach","Pear","Plum","Apricot","Raspberry","Cherry","Blackberry","Coconut","Fig","Date","Jackfruit","Custard Apple","Tamarind","Starfruit","Passionfruit"]
+  },
+
+  "Oils": {
+     "icon": "assets/icons/oils.png",
+    "items": ["Olive Oil","Coconut Oil","Mustard Oil","Sunflower Oil","Groundnut Oil","Sesame Oil","Avocado Oil","Canola Oil","Ghee","Corn Oil","Palm Oil","Soybean Oil","Walnut Oil","Rice Bran Oil","Flaxseed Oil","Almond Oil","Safflower Oil","Hazelnut Oil","Grapeseed Oil","Cashew Oil","Pumpkin Seed Oil","Macadamia Oil","Pistachio Oil","Camelina Oil","Hemp Seed Oil","Peanut Oil","Argan Oil","Shea Oil","Babassu Oil","Butter Oil"]
+  },
+
+  "Condiments": {
+   "icon": "assets/icons/condiments.png",
+    "items":["Ketchup","Mayonnaise","Mustard","Soy Sauce","Hot Sauce","Chili Sauce","BBQ Sauce","Ranch Dressing","Thousand Island","Vinegar","Salsa","Relish","Tartar Sauce","Honey Mustard","Fish Sauce","Tahini","Chutney","Wasabi","Hoisin Sauce","Pesto","Aioli","Chili Garlic Sauce","Oyster Sauce","Sriracha","Yogurt Dip","Mint Sauce","Sweet Chili Sauce","Gochujang","Harissa","Pickles"]
+  },
+
+  "Seasoning": {
+   "icon": "assets/icons/seasonings.png",
+    "items":["Salt","Pepper","Cumin","Coriander","Oregano","Basil","Thyme","Rosemary","Sage","Bay Leaf","Marjoram","Dill","Parsley","Cinnamon","Nutmeg","Clove","Cardamom","Fenugreek","Allspice","Curry Leaves","Star Anise","Fennel","Chili Flakes","Mustard Seeds","Celery Salt","Garlic Powder","Onion Powder","Paprika","Chaat Masala","Herbes de Provence"]
+  },
+
+  "Chocolates": {
+   "icon": "assets/icons/desserts.png",
+    "items": ["Milk Chocolate","Dark Chocolate","White Chocolate","Cocoa Powder","Chocolate Chips","Chocolate Syrup","Nutella","Hot Chocolate Mix","Chocolate Bar","Caramel Chocolate","Mint Chocolate","Hazelnut Chocolate","Peanut Butter Chocolate","Coconut Chocolate","Ruby Chocolate","Orange Chocolate","Coffee Chocolate","Rum Chocolate","Strawberry Chocolate","Chocolate Biscuit","Chocolate Ice Cream","Fudge","Brownie","Chocolate Truffle","Ganache","Chocolate Spread","Chocolate Wafer","Chocolate Cookie","Chocolate Pudding","Chocolate Cake"]
+  },
+
+  "Meat": {
+   "icon": "assets/icons/meats.png",
+    "items":["Chicken Breast","Chicken Thigh","Chicken Drumstick","Chicken Wings","Whole Chicken","Turkey Breast","Turkey Legs","Duck Breast","Duck Legs","Lamb Chops","Lamb Leg","Lamb Shoulder","Mutton Curry Cut","Pork Ribs","Pork Belly","Pork Chops","Beef Steak","Beef Mince","Beef Ribs","Beef Brisket","Goat Meat","Quail","Rabbit Meat","Venison","Buffalo Meat","Ham","Bacon","Salami","Sausage","Pepperoni"]
+  },
+
+  "Breads": {
+   "icon": "assets/icons/dairy.png",
+    "items": ["White Bread","Brown Bread","Whole Wheat Bread","Multigrain Bread","Rye Bread","Sourdough","Baguette","Ciabatta","Focaccia","Pita Bread","Naan","Roti","Paratha","Chapati","Kulcha","Bread Roll","Bun","Croissant","Brioche","Bagel","English Muffin","Flatbread","Tortilla","Lavash","Khakhra","Khameeri Roti","Cornbread","Banana Bread","Garlic Bread","Stuffed Bread"]
+  },
+  "Legumes":{
+     "icon": "assets/icons/Legumes.png",
+    "items": ["Kidney Beans","Black Beans","Chickpeas","Green Gram","Black Gram","Pigeon Pea","Lentils","Soybeans","Navy Beans","Fava Beans","Cannellini Beans","Broad Beans","Peas","Split Peas","Mung Beans","Pinto Beans","Adzuki Beans","Horse Gram","Cluster Beans","Yardlong Beans","French Beans","Winged Beans","Cowpeas","Bambara Beans","Tepary Beans","Scarlet Runner Beans","Lupin Beans","Black-eyed Peas","Butter Beans","Field Peas"]
+  },
+  
+  "Fishes":{
+   "icon": "assets/icons/fish.png",
+    "items":["Salmon","Tuna","Sardine","Mackerel","Anchovy","Trout","Cod","Haddock","Catfish","Tilapia","Snapper","Seabass","Pomfret","Rohu","Hilsa","Pangasius","Eel","Swordfish","Kingfish","Shark Meat","Octopus","Squid","Cuttlefish","Clam","Mussel","Lobster","Crab","Prawn","Shrimp","Scallop"]
+  },
+
+  "Alcohol":{
+   "icon": "assets/icons/alcohol.png",
+    "items":["Beer","Wine","Whiskey","Rum","Vodka","Gin","Tequila","Brandy","Champagne","Port Wine","Sherry","Cider","Sake","Soju","Absinthe","Mead","Vermouth","Triple Sec","Baileys Irish Cream","Kahlua","Cognac","Armagnac","Amaretto","Sambuca","Limoncello","Pisco","Grappa","Campari","Aperol","Jägermeister"]
+  },
+
+  "Cheese": {
+   "icon": "assets/icons/cheese.png",
+    "items":["Cheddar","Mozzarella","Parmesan","Gouda","Swiss Cheese","Blue Cheese","Brie","Camembert","Feta","Goat Cheese","Ricotta","Paneer","Cotija","Provolone","Colby Jack","Pepper Jack","Edam","Halloumi","Manchego","Mascarpone","Monterey Jack","Queso Blanco","Queso Fresco","Roquefort","Havarti","Gruyere","Burrata","Stilton","String Cheese","Smoked Cheese"]
+  },
+
+  "Mushrooms": {
+   "icon": "assets/icons/mushrooms.png",
+    "items":["Button Mushroom","Shiitake","Oyster Mushroom","Enoki","Porcini","Portobello","Cremini","Chanterelle","Morel","Maitake","King Oyster","Wood Ear","Lion’s Mane","Black Trumpet","Paddy Straw","Straw Mushroom","Reishi","Shimeji","Turkey Tail","Beech Mushroom","Cauliflower Mushroom","Coral Fungus","Puffball","Earthstar","Giant Puffball","Yellow Oyster","Pink Oyster","Elm Oyster","Velvet Foot","Cordyceps"]
+  },
+
+  "Porridges":{
+   "icon": "assets/icons/porridge.png",
+    "items": ["Oatmeal","Rice Porridge","Millet Porridge","Cornmeal Porridge","Wheat Porridge","Barley Porridge","Quinoa Porridge","Ragi Porridge","Sago Porridge","Semolina Porridge","Buckwheat Porridge","Amaranth Porridge","Kodo Millet Porridge","Foxtail Millet Porridge","Barnyard Millet Porridge","Finger Millet Porridge","Broken Rice Porridge","Coconut Milk Porridge","Pumpkin Porridge","Banana Porridge","Sweet Potato Porridge","Peanut Porridge","Date Porridge","Fig Porridge","Apple Porridge","Pearl Millet Porridge","Multigrain Porridge","Honey Porridge","Almond Porridge","Soy Milk Porridge"]
+  },
+
+  "Sauces": {
+   "icon": "assets/icons/sauces.png",
+    "items":["Tomato Sauce","Soy Sauce","BBQ Sauce","Pesto","Hollandaise","Béchamel","Velouté","Espagnole","Chimichurri","Salsa Verde","Tzatziki","Guacamole","Aioli","Romesco","Teriyaki","Ponzu","Yakisoba Sauce","Curry Sauce","Tamarind Sauce","Chili Garlic Sauce","Sweet and Sour Sauce","Butter Sauce","Garlic Sauce","Black Bean Sauce","Satay Sauce","Peanut Sauce","White Wine Sauce","Red Wine Sauce","Carbonara Sauce","Arrabbiata"]
+  },
+
+  "Seeds": {
+   "icon": "assets/icons/seeds.png",
+    "items": ["Chia Seeds","Flax Seeds","Sunflower Seeds","Pumpkin Seeds","Sesame Seeds","Hemp Seeds","Poppy Seeds","Cumin Seeds","Nigella Seeds","Mustard Seeds","Fennel Seeds","Fenugreek Seeds","Watermelon Seeds","Basil Seeds","Caraway Seeds","Celery Seeds","Quinoa Seeds","Amaranth Seeds","Teff Seeds","Rye Seeds","Barley Seeds","Oat Seeds","Corn Seeds","Rice Seeds","Sorghum Seeds","Kamut Seeds","Buckwheat Seeds","Millet Seeds","Canary Seeds","Chironji Seeds"]
+},
+
+  "Spices": {
+   "icon": "assets/icons/spices.png",
+    "items": ["Cumin","Coriander","Turmeric","Chili Powder","Garam Masala","Curry Powder","Black Pepper","White Pepper","Cloves","Cinnamon","Cardamom","Nutmeg","Mace","Star Anise","Fennel Seeds","Fenugreek Seeds","Mustard Seeds","Caraway Seeds","Ajwain","Asafoetida","Bay Leaf","Saffron","Sumac","Paprika","Allspice","Aniseed","Dill Seeds","Ginger Powder","Garlic Powder","Onion Powder","Cayenne Pepper"]
+}}

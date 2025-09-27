@@ -1,0 +1,244 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spline Sans", "Noto Sans", sans-serif;
+  background: #f9f9f7;
+  color: #333;
+  line-height: 1.6;
+}
+#main{
+  padding: 100px;
+}
+/* Section */
+.section-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+   width: 100%;
+}
+
+/* Categories Navigation */
+.categories-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem 0;
+  gap: 1rem;
+  width: 100%;
+}
+
+.nav-arrow {
+  background: var(--chip-bg);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease-in-out;
+}
+
+.nav-arrow:hover {
+  background: #e9e8ce;
+}
+.categories-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.ingredient-tag {
+  display: inline-block;
+  background: #f0f0c0;
+  color: #333;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.categories-slider {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Category Pills */
+.category-pill {
+   width: 100%;                     /* w-full */
+  max-width: fit-content;          /* md:w-auto */
+  display: flex;                   /* flex */
+  align-items: center;             /* items-center */
+  justify-content: center;         /* justify-center */
+  border-radius: 9999px;           /* rounded-full */
+  height: 3rem;                    /* h-12 */
+  padding-left: 2rem;              /* px-8 (32px) */
+  padding-right: 2rem;
+  border-radius: 999px;
+  background: #facc15;
+   box-shadow: var(--shadow);/* bg-[var(--primary-color)] */
+  color: #1c1c0d;                  /* text-[#1c1c0d] */
+  font-size: 1rem;                 /* text-base */
+  font-weight: 700;                /* font-bold */
+  letter-spacing: 0.05em;          /* tracking-wide */
+  transition: all 0.2s ease-in-out;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 0.75rem;               
+  min-height: 55px;
+  min-width: 180px;          
+  max-width: 260px;          
+  background: #f7f7f4;
+  border-radius: 30%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.category-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.category-pill img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;   /* keep icon visible even if text is long */
+}
+
+/* Selected Category Title */
+.selected-category-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Ingredients Container */
+.ingredients-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  padding-bottom: 20px;
+   width: 100%;
+}
+
+/* Ingredient Chips */
+.ingredient-chip {
+  background: #fffefc;
+  border: #1c1c0d 1px solid;
+  border-radius: 10%;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.ingredient-chip:hover {
+  background: #fefcaf;
+}
+
+/* Selected Ingredient */
+.ingredient-chip.selected {
+  background: #facc15;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+
+/* Loading Animation */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(249, 245, 6, 0.3);
+    border-top: 3px solid #f9f506;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .categories-navigation {
+        gap: 0.5rem;
+    }
+    
+    .categories-container {
+        margin: 0 0.5rem;
+    }
+    
+    .category-btn {
+        min-width: 160px;
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .nav-arrow {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .selected-category-title {
+        font-size: 1.25rem;
+    }
+    
+    .ingredient-chip {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-btn {
+        min-width: 140px;
+        padding: 1rem 0.5rem;
+    }
+    
+    .category-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .category-name {
+        font-size: 0.9rem;
+    }
+}  

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CookSmart</title>
+  <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect"/>
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+      <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="recipe.css"/>
+
+</head>
+<body style="background-image: url('assets/bg.jpg');">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- Header -->
+      <div id="header"></div>
+
+  <!-- Recipe Content -->
+  <main class="recipe-container">
+    <div id="recipeImage" class="recipe-image">
+      <img src=" " alt=" " />
+    </div>
+
+    <section class="recipe-content">
+      <div class="recipe-info">
+        <h1 id="recipeTitle"></h1>
+
+        <!-- Chips -->
+        <div class="chips">
+          <span id="labelVeg" class="chip veg">Veg</span>
+          <span id="nonVegLabel" class="chip nonveg">Non-Veg</span>
+          <span id="labelVegan" class="chip vegan">Vegan</span>
+          <span id="labelGluten" class="chip glutenfree">Gluten-Free</span>
+          <span id="labelDairy" class="chip dairyfree">Dairy-Free</span>
+        </div>
+
+        <h2>Ingredients</h2>
+        <ul id="ingredientsList" class="ingredients"></ul>
+
+        <h2>Instructions</h2>
+        <div id="instructions" class="instructions"></div>
+      </div>
+
+      <aside class="recipe-details">
+        <div class="detail"><span>Prep Time</span><strong id="recipePrep"></strong></div>
+        <div class="detail"><span>Cook Time</span><strong id="recipeCook"></strong></div>
+        <div class="detail"><span>Total Time</span><strong id="recipeTime"></strong></div>
+        <div class="detail"><span>Servings</span><strong id="recipeServings"></strong></div>
+        <div class="detail"><span>Dish Type</span><strong id="recipeDish"></strong></div>
+        <div class="detail"><span>Cuisine</span><strong id="recipeCuisine"></strong></div>
+
+        <button id="primary-btn"><span class="material-symbols-outlined">bookmark</span> Save Recipe</button>
+        <button id="secondary-btn"><span class="material-symbols-outlined">share</span> Share</button>
+  <div id="toast"></div>
+        <!-- Nutrition Chart -->
+        <canvas id="nutritionChart" ></canvas>
+      </aside>
+    </section>
+  </main>
+   <!-- Footer -->
+  <div id="footer"></div>
+<script>
+    function loadHTML(elementId, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => console.error("Error loading file:", error));
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+  </script>
+  <script src="recipe.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

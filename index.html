@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealCraft - Discover Recipes with what you have</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Placeholder for header -->
+  <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Delicious Recipes with What You Have</h1>
+                <p class="hero-subtitle">Transform your available ingredients into amazing meals with our AI-powered recipe finder. No more food waste, just great taste.</p>
+                <div class="hero-search">
+                    <!-- <input type="text" placeholder="Enter your ingredients (e.g., chicken, tomatoes, rice)" class="search-input"> -->
+                    <button class="search-btn"><a href="search.html" style="color: rgb(9, 0, 0); text-decoration: none;">
+                         
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        Find Recipes </a>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/ss/result.png?height=400&width=500" alt="Fresh ingredients and cooking" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- USP Section -->
+    <section class="usp-section">
+        <div class="container">
+            <div class="usp-content">
+                <h2 class="section-title">Your Kitchen, Unlimited Possibilities</h2>
+                <div class="usp-grid">
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c.552 0 1-.448 1-1V5c0-.552-.448-1-1-1H3c-.552 0-1 .448-1 1v6c0 .552.448 1 1 1h18z"></path>
+                                <path d="M3 12v7c0 .552.448 1 1 1h16c.552 0 1-.448 1-1v-7"></path>
+                            </svg>
+                        </div>
+                        <h3>Zero Food Waste</h3>
+                        <p>Use every ingredient in your fridge and pantry. Our smart algorithm ensures nothing goes to waste.</p>
+                    </div>
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Save Time & Money</h3>
+                        <p>No more grocery runs for missing ingredients. Cook delicious meals with what you already have.</p>
+                    </div>
+                    <div class="usp-card">
+                        <div class="usp-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3>Personalized Experience</h3>
+                        <p>Get recipe recommendations based on your dietary preferences, allergies, and cooking skill level.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Features Carousel -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose MealCraft?</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <div class="feature-card">
+                                <img src="assets/icons/smart_search.png" alt="Smart Recipe Search" class="feature-image">
+                                <div class="feature-content">
+                                    <h1>Smart Recipe Search</h1>
+                                    <h3>Our AI analyzes your ingredients and suggests perfect recipe matches based on what you have at home.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="feature-card">
+                                <img src="assets/icons/nutrition.png" alt="Nutritional Insights" class="feature-image">
+                                <div class="feature-content">
+                                    <h1>Nutritional Insights</h1>
+                                    <h3>Get detailed nutritional information for every recipe, helping you make healthier food choices.</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="feature-card">
+                                <img src="assets/icons/steps.png" alt="Step-by-Step Guidance" class="feature-image">
+                                <div class="feature-content">
+                                    <h1>Step-by-Step Guidance</h1>
+                                    <h3>Follow easy-to-understand cooking instructions with photos and videos for perfect results every time.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn next-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Social Proof Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"MealCraft has completely changed how I cook! I used to throw away so much food, but now I can turn any random ingredients into amazing meals."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial/2.jpg?height=60&width=60" alt="Sarah Johnson" class="author-image">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Home Cook</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a busy parent, MealCraft is a lifesaver. I can quickly find recipes using whatever's in my fridge, and my kids actually love the meals!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial/1.jpg?height=60&width=60" alt="Mike Chen" class="author-image">
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <p>Father of Two</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The nutritional insights feature is fantastic! I can maintain my healthy eating goals while still enjoying delicious, creative meals."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial/3.jpg?height=60&width=60" alt="Emma Davis" class="author-image">
+                        <div class="author-info">
+                            <h4>Emma Davis</h4>
+                            <p>Fitness Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Cooking?</h2>
+                <p class="cta-subtitle">Join thousands of home cooks who've discovered the joy of ingredient-based cooking</p>
+                <form class="cta-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" class="email-input" required>
+                        <button type="submit" class="cta-button"><a href="search.html" style="color: rgb(255, 255, 255); text-decoration: none;">
+                            Get Started Free </a>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7,7 17,7 17,17"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">No credit card required. Start your culinary journey today!</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>  How does MealCraft find recipes based on my ingredients?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>   Our AI-powered algorithm analyzes your available ingredients and matches them with our extensive recipe database. It considers ingredient combinations, cooking methods, and dietary preferences to suggest the best possible recipes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>   Can I save recipes for later?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>   You can save your favorite recipes to your personal collection, create custom meal plans, and even share recipes with friends and family.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>     Does MealCraft accommodate dietary restrictions?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>      Yes! MealCraft supports various dietary preferences including vegetarian, vegan, gluten-free, keto, paleo, and more. You can set your preferences in your profile for personalized recipe suggestions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>      Is MealCraft free to use?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>      MealCraft offers a free tier with basic recipe search functionality. Premium features like advanced nutritional insights, meal planning, and unlimited recipe saves are available with our subscription plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+      <!-- Placeholder for footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Function to load external HTML
+    function loadHTML(elementId, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => console.error("Error loading file:", error));
+    }
+
+    // Load header.html and footer.html
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+  </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

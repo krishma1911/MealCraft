@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+              <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+  --primary-color: #facc15;
+  --secondary-color: #f59e0b;
+  --accent-gradient: linear-gradient(135deg, #facc15, #f59e0b);
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-white: #ffffff;
+  --bg-light: #f9fafb;
+  --border-color: #e5e7eb;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+    /* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo-img {
+height: 80px;
+  width: auto;
+  padding-left: 80px;
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: var(--accent-gradient);
+   color: rgb(10, 0, 0);
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+}
+
+.header-avatar {
+  width: 40px;
+  height: 40px;
+  background-image: url('assets/avatar/1.jpg');
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffd700;
+}
+</style>
+    
+ </head>
+ <body>
+               <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/icons/logo.png" alt="MealCraft Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="search.html" class="nav-link">Search</a></li>
+                    <li><a href="saved.html" class="nav-link">Saved</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div  class="header-avatar" id="headerAvatar">
+                <a href="profile.html"> <div class="header-avatar" id="headerAvatar"></div></a>
+            </div>
+        </nav>
+    </header>
+  <script src="script.js"></script>
+ </body>
+ </html>

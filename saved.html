@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Saved Recipes</title>
+      <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+
+  <link rel="stylesheet" href="saved.css">
+   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?display=swap&family=Spline+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700;900" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body style="background-image: url('assets/bg.jpg');">
+      <!-- Header -->
+      <div id="header"></div>
+  <div class="page">
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+        <div class="intro">
+          <h2>Your Saved Recipes</h2>
+          <p>All your favorite culinary creations in one place.</p>
+        </div>
+        <!-- Empty grid for dynamic content -->
+        <div class="grid"></div>
+      </div>
+    </main>
+  </div>
+   <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    function loadHTML(elementId, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => console.error("Error loading file:", error));
+    }
+    loadHTML("header", "header.html");
+    loadHTML("footer", "footer.html");
+  </script>
+  <script src="saved.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
